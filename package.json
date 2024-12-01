@@ -1,0 +1,20 @@
+{
+  "name": "ai-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file=.env server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@botpress/chat": "^0.4.2",
+    "@google/generative-ai": "^0.21.0",
+    "express": "^4.21.1",
+    "openai": "^4.73.1"
+  }
+}
