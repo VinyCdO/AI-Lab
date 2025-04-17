@@ -38,7 +38,7 @@ Realizar uma chamada GET no endpoint abaixo:
 <li><i>http://localhost:7000/generateAIConversation</i></li>
 <br>
 <br>
-Adicionar ao body da requisição o JSON abaixo, alterando o prompt para qual tema deseja que as IAs interajam enre si:
+Adicionar ao body da requisição o JSON abaixo, alterando o prompt para qual tema deseja que as IAs interajam entre si:
 <br>
 <i>{
   "prompt": "Olá, me faça perguntas para descobrir quem eu sou, você pode fazer uma pergunta por vez"
