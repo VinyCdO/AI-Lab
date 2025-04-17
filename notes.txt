@@ -1,0 +1,4 @@
+const openai = new OpenAI({
+   organization: "org-icyMho8O8BSgB5qsNtn0NJdj",
+   project: "proj_spkuC39Gc7ulvvfxTb8KX6KY"
+ });

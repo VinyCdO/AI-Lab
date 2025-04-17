@@ -6,7 +6,7 @@ export async function gerarRespostaChatGpt(prompt) {
     const completion = await openai.chat.completions.create({
         model: "gpt-4o-mini",
         messages: [
-            { role: "system", content: "You are a helpful assistant." },
+            { role: "system", content: "You are a friendly person." },
             {
                 role: "user",
                 content: prompt,

@@ -9,8 +9,15 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 export async function gerarRespostaChatGemini(prompt) {
   
   try {
-    // Envia o prompt e a imagem para o modelo e aguarda a resposta
-    const res = await model.generateContent([prompt]);
+    // Define o prompt de sistema para configurar a personalidade
+    const systemPrompt = "Você é uma pessoal amigável que só quer conversar e responde de forma natural, clara e objetiva.";
+
+    // Combina o prompt de sistema com o prompt do usuário
+    const fullPrompt = `${systemPrompt}\n\nUsuário: ${prompt}`;
+
+    // Envia o prompt combinado para o modelo e aguarda a resposta
+    const res = await model.generateContent([fullPrompt]);
+
 
     // Retorna a resposta gerada
     return res.response.text() || "Resposta não disponível.";
